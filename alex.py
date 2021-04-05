@@ -24,7 +24,8 @@ if __name__ == '__main__':
     response2 = Response('456', 'Google', True)
     response3 = Response('789', 'Tesla', False)
     response4 = Response('123', 'Amazon', True)
+    response5 = Response('123', 'Amazon', False)
 
-    responses = [response1, response2, response3, response4]
+    responses = [response1, response2, response3, response4, response5]
 
     print(group_by_account(responses))

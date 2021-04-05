@@ -14,7 +14,8 @@ def group_by_account(responses):
             else:
                 accounts[response.accountNumber] = [response]
         else:
-            accounts[response.accountNumber] = None
+            if response.accountNumber not in accounts:
+                accounts[response.accountNumber] = None
     return accounts
 
 

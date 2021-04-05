@@ -10,7 +10,7 @@ def group_by_account(responses):
     for response in responses:
         if response.isValid:
             if response.accountNumber in accounts:
-                accounts[response.accountNumber] = (accounts[response.accountNumber]).append(response)
+                accounts[response.accountNumber].append(response)
             else:
                 accounts[response.accountNumber] = [response]
         else:
